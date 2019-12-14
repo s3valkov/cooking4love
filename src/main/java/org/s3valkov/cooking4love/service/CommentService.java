@@ -2,6 +2,8 @@ package org.s3valkov.cooking4love.service;
 
 import org.s3valkov.cooking4love.domain.models.service.CommentServiceModel;
 
+import java.util.List;
+
 public interface CommentService {
 
     CommentServiceModel createComment(CommentServiceModel commentServiceModel);
@@ -10,5 +12,8 @@ public interface CommentService {
 
     void deleteComment(String id);
 
-    CommentServiceModel editComment(String id, CommentServiceModel commentServiceModel);
+    List<CommentServiceModel> findAllComments();
+
+
+    List<CommentServiceModel> findAllByRestaurants(String name);
 }

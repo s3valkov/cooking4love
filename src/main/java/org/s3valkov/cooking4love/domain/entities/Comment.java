@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Comment extends BaseEntity {
     private String author;
     private String description;
-    private Restaurant restaurant;
+    private String restaurant;
 
     public Comment(){
     }
@@ -30,13 +30,12 @@ public class Comment extends BaseEntity {
         this.description = description;
     }
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "restaurant_id", referencedColumnName = "id", nullable = false)
-    public Restaurant getRestaurant() {
+    @Column(name = "restaurant", nullable = false)
+    public String getRestaurant() {
         return restaurant;
     }
 
-    public void setRestaurant(Restaurant restaurant) {
+    public void setRestaurant(String  restaurant) {
         this.restaurant = restaurant;
     }
 }

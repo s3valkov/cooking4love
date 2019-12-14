@@ -5,7 +5,7 @@ import org.s3valkov.cooking4love.domain.entities.Level;
 public class RecipeServiceModel extends BaseServiceModel {
     private String name;
     private String author;
-    private CategoryServiceModel category;
+    private String category;
     private String ingridients;
     private String method;
     private Level level;
@@ -30,11 +30,11 @@ public class RecipeServiceModel extends BaseServiceModel {
         this.author = author;
     }
 
-    public CategoryServiceModel getCategory() {
+    public String getCategory() {
         return category;
     }
 
-    public void setCategory(CategoryServiceModel category) {
+    public void setCategory(String category) {
         this.category = category;
     }
 

@@ -6,7 +6,7 @@ import org.s3valkov.cooking4love.domain.entities.Level;
 public class RecipeCreateBindingModel {
     private String name;
     private String author;
-    private Category category;
+    private String category;
     private String ingridients;
     private String method;
     private Level level;
@@ -31,11 +31,11 @@ public class RecipeCreateBindingModel {
         this.author = author;
     }
 
-    public Category getCategory() {
+    public String getCategory() {
         return category;
     }
 
-    public void setCategory(Category category) {
+    public void setCategory(String category) {
         this.category = category;
     }
 

@@ -1,11 +1,9 @@
 package org.s3valkov.cooking4love.domain.models.binding;
 
-import org.s3valkov.cooking4love.domain.entities.Restaurant;
-
 public class CommentCreateBindingModel {
     private String author;
     private String description;
-    private Restaurant restaurant;
+    private String restaurant;
 
     public CommentCreateBindingModel(){
     }
@@ -26,11 +24,11 @@ public class CommentCreateBindingModel {
         this.description = description;
     }
 
-    public Restaurant getRestaurant() {
+    public String getRestaurant() {
         return restaurant;
     }
 
-    public void setRestaurant(Restaurant restaurant) {
+    public void setRestaurant(String restaurant) {
         this.restaurant = restaurant;
     }
 }

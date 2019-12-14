@@ -1,6 +1,7 @@
 package org.s3valkov.cooking4love.domain.entities;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
 import java.util.List;
 
 @Entity
@@ -8,7 +9,7 @@ import java.util.List;
 public class Recipe extends BaseEntity {
     private String name;
     private String author;
-    private Category category;
+    private String category;
     private String ingridients;
     private String method;
     private Level level;
@@ -34,13 +35,12 @@ public class Recipe extends BaseEntity {
         this.author = author;
     }
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "category_id", referencedColumnName = "id")
-    public Category getCategory() {
+
+    public String getCategory() {
         return category;
     }
 
-    public void setCategory(Category category) {
+    public void setCategory(String category) {
         this.category = category;
     }
 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="~{fragments/head}"></th:block>
+    <style>
+        img {
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container-fluid">
+    <header>
+        <th:block th:include="~{fragments/nav-bar}"></th:block>
+    </header>
+    <main class="mt-5">
+        <div class="bg-image-create">
+            <span style="visibility: hidden">....</span>
+            <h1 class="text-center font-weight-bold text-white">Profile</h1>
+            <hr class="bg-hero">
+            <hr class="hr-2 w-25 bg-hero">
+            <div class="row">
+                <div class="col col-md-12 text-center" >
+                   <img src="https://i.pinimg.com/originals/fb/79/2f/fb792fb9b36b2b8efa8c2136172d95ca.jpg" alt="Chef">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-12 text-center text-white">
+                    <h1 th:utext="'Username: ' + ${model.username}"></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-12 text-center text-white">
+                    <h4 th:utext="'Email: ' + ${model.email}"></h4>
+                </div>
+            </div>
+            <hr class="hr-2 w-25 bg-hero">
+            <div class="button-holder d-flex justify-content-center">
+                <button type="submit" class="btn btn-dark">Edit</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <th:block th:include="~{fragments/footer}"></th:block>
+    </footer>
+</div>
+</body>
+</html>

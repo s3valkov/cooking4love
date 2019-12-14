@@ -12,7 +12,6 @@ public class Restaurant extends BaseEntity{
     private String name;
     private String location;
     private double rate;
-    private List<Comment> comments;
 
     public Restaurant(){
     }
@@ -44,12 +43,4 @@ public class Restaurant extends BaseEntity{
         this.rate = averageRate;
     }
 
-    @OneToMany(mappedBy = "restaurant")
-    public List<Comment> getComments() {
-        return comments;
-    }
-
-    public void setComments(List<Comment> comments) {
-        this.comments = comments;
-    }
 }

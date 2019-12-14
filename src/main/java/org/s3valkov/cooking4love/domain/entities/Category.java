@@ -17,7 +17,7 @@ public class Category extends BaseEntity {
     public Category() {
     }
 
-    @Column(name = "name", nullable = false)
+    @Column(name = "name", nullable = false, unique = true)
     @Size(min = 3, max = 30)
     public String getName() {
         return name;

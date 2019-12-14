@@ -8,7 +8,6 @@ public class RestaurantCreateBindingModel {
     private String name;
     private String location;
     private double rate;
-    private List<Comment> comments;
 
     public RestaurantCreateBindingModel(){
     }
@@ -37,11 +36,4 @@ public class RestaurantCreateBindingModel {
         this.rate = rate;
     }
 
-    public List<Comment> getComments() {
-        return comments;
-    }
-
-    public void setComments(List<Comment> comments) {
-        this.comments = comments;
-    }
 }

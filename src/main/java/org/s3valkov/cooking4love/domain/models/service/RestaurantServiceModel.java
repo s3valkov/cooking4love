@@ -6,7 +6,6 @@ public class RestaurantServiceModel extends BaseServiceModel {
     private String name;
     private String location;
     private double rate;
-    private List<CommentServiceModel> comments;
 
     public RestaurantServiceModel(){
     }
@@ -35,11 +34,4 @@ public class RestaurantServiceModel extends BaseServiceModel {
         this.rate = rate;
     }
 
-    public List<CommentServiceModel> getComments() {
-        return comments;
-    }
-
-    public void setComments(List<CommentServiceModel> comments) {
-        this.comments = comments;
-    }
 }

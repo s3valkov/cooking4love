@@ -1,0 +1,28 @@
+.bg-hero {
+    background: #182b40;
+    color: white;
+}
+
+.text-hero {
+    color: white;
+}
+
+.text-menu{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hr-2 {
+    height: 2px;
+}
+
+textarea {
+    resize: none;
+}
+
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: 0.75rem;
+}

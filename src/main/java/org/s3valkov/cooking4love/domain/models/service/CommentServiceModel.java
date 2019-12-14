@@ -3,7 +3,7 @@ package org.s3valkov.cooking4love.domain.models.service;
 public class CommentServiceModel extends BaseServiceModel {
     private String author;
     private String description;
-    private RestaurantServiceModel restaurant;
+    private String restaurant;
 
     public CommentServiceModel(){
     }
@@ -24,11 +24,11 @@ public class CommentServiceModel extends BaseServiceModel {
         this.description = description;
     }
 
-    public RestaurantServiceModel getRestaurant() {
+    public String getRestaurant() {
         return restaurant;
     }
 
-    public void setRestaurant(RestaurantServiceModel restaurant) {
+    public void setRestaurant(String restaurant) {
         this.restaurant = restaurant;
     }
 }

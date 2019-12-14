@@ -1,7 +1,5 @@
 package org.s3valkov.cooking4love.domain.models.service;
 
-import org.s3valkov.cooking4love.domain.entities.Role;
-
 import java.util.Set;
 
 public class UserServiceModel extends BaseServiceModel {

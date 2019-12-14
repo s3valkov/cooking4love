@@ -8,7 +8,6 @@ public class UserLoginBindingModel {
 
 
     public UserLoginBindingModel(){
-
     }
 
     public String getUsername() {
