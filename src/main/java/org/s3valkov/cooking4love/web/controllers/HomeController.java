@@ -11,7 +11,7 @@ public class HomeController extends BaseController {
 
     @GetMapping("/")
     @PreAuthorize("isAnonymous()")
-    @PageTitle
+    @PageTitle("Index")
     public ModelAndView index(){
         return super.view("index");
     }

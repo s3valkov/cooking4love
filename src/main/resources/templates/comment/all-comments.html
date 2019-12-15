@@ -30,8 +30,14 @@
                         <td class="col-md-3 text-center" th:utext="${comment.author}"></td>
                         <td class="col-md-3 text-center" th:utext="${comment.description}"></td>
                         <td class="col-md-2 text-center" th:utext="${comment.restaurant}"></td>
+                        <td class="col-md-3 text-center">
+                            <th:block sec:authorize="hasRole('ROLE_ADMIN')">
+                                <a th:href="@{/comments/delete/{id}(id=${comment.id})}"
+                                   class="btn btn-danger glow-button font-weight-bold text-white">Delete</a>
+                            </th:block>
+                        </td>
                     </tr>
-                </th:block>
+
                 </tbody>
             </table>
             <hr class="hr-2 bg-dark">

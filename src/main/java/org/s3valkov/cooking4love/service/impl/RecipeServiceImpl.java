@@ -53,13 +53,4 @@ public class RecipeServiceImpl  implements RecipeService {
                 .orElseThrow(() -> new RecipeNotFoundException(Constants.RECIPE_NOT_FOUND));
     }
 
-    @Override
-    public void deleteRecipe(String id) {
-
-    }
-
-    @Override
-    public RecipeServiceModel editRecipe(String id, RecipeServiceModel recipeServiceModel) {
-        return null;
-    }
 }

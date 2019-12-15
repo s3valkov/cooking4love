@@ -37,6 +37,10 @@
                                 <a th:href="@{/restaurants/delete/{id}(id=${restaurant.id})}"
                                    class="btn btn-danger glow-button font-weight-bold text-white">Delete</a>
                             </th:block>
+                            <th:block sec:authorize="hasRole('ROLE_ADMIN')">
+                                <a th:href="@{/restaurants/edit/{id}(id=${restaurant.id})}"
+                                   class="btn btn-success glow-button font-weight-bold text-white">Edit</a>
+                            </th:block>
                         </td>
                     </tr>
                 </th:block>

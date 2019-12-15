@@ -66,7 +66,6 @@ public class RestaurantServiceImpl implements RestaurantService {
         Restaurant restaurant = this.restaurantRepository.findById(id)
                 .orElseThrow(() -> new RestaurantNotFoundException(Constants.RESTAURANT_NOT_FOUND));
 
-        System.out.println();
         restaurant.setName(restaurantServiceModel.getName());
         restaurant.setLocation(restaurantServiceModel.getLocation());
         restaurant.setRate(restaurantServiceModel.getRate());
